@@ -161,6 +161,5 @@ def upload():
     except Exception as e:
         return f"Ошибка: {e}"
 
-
 if __name__ == "__main__":
     app.run
