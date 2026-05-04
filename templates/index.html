@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            padding: 40px;
+        }
+
+        .box {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 14px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Обработка Excel</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label>Основной файл .xlsx</label>
+        <input type="file" name="file1" accept=".xlsx" required>
+
+        <label>Дополнительный файл .xlsx</label>
+        <input type="file" name="file2" accept=".xlsx" required>
+
+        <button type="submit">Обработать и скачать итог</button>
+    </form>
+</div>
+
+</body>
+</html>
